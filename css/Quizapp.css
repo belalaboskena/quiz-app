@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Arial;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 800px;
+  padding: 20px;
+  background-color: rgb(220, 218, 218);
+}
+.container .quiz_info {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.container .question_area {
+  padding: 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+.container .answers_area {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px;
+  background-color: white;
+}
+.container .answers_area .answer {
+  background-color: rgb(220, 218, 218);
+  padding: 15px;
+}
+.container .answers_area .answer:not(:last-child) {
+  border-bottom: 2px solid #ccc;
+}
+.container .answers_area .answer input:checked + label{
+  color: rgb(58, 136, 237);
+}
+.container .answers_area .answer input{
+  margin-right: 10px;
+}
+.container .answers_area .answer label {
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  top: -1px;
+}
+.container button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(58, 136, 237);
+}
+.container button:focus {
+  outline: none;
+}
+.container .bullets {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 10px;
+}
+.container .bullets .spans {
+  display: flex;
+  gap: 5px;
+}
+.container .bullets .spans span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(220, 218, 218);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.container .bullets .spans .on {
+  background-color: rgb(58, 136, 237);
+}
+.container .result {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  margin-top: 10px;
+  height: 290.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.warning {
+  color: red;
+}
+.container .result h2 {
+  font-size: 40px;
+}
+.container .result .bad {
+  font-weight: bold;
+  color: rgb(215, 15, 15);
+}
+.container .result .good {
+  font-weight: bold;
+  color: rgb(44, 145, 44);
+}
+.container .result .perfect {
+  font-weight: bold;
+  color: rgb(163, 19, 163);
+}
+.container .result p {
+  margin: 0;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
